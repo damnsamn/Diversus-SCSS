@@ -1,0 +1,34 @@
+// This file should only hold styling that applies to all pages.
+// This may include standard font-sizes, cross-browser normalisation, redefinition of defaults etc.
+
+html * {
+    box-sizing: border-box;
+}
+
+body, p {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+h6 {
+    font-size: 16px;
+}
