@@ -1,1 +1,55 @@
-// This file holds all the mixins you'll use throughout the rest of the css
+// This file should hold all the mixins you'll use throughout the rest of the scss.
+
+@mixin ms-only {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+// Aspect Ratio mixin syntax:
+//  @include aspect-ratio(ratioX, ratioY, breakpoint (optional), height (optional))
+
+@mixin define-aspect($x, $y, $br: null, $height: null) {
+    @if $br==null and $height==null {
+        padding-top: calc(100% / (#{$x} / #{$y}));
+    }
+
+    @else if $br and $height==null {
+        @include media-breakpoint-up($br) {
+            padding-top: calc(100% / (#{$x} / #{$y}));
+        }
+    }
+
+    @else if $br and $height {
+        @include media-breakpoint-up($br) {
+            height: #{$height}px;
+            width: calc(#{$height}px * (#{$x} / #{$y}));
+        }
+    }
+
+    @else if $br==null and $height {
+        height: #{$height}px;
+        width: calc(#{$height}px * (#{$x} / #{$y}));
+    }
+}
+
+@mixin aspect-ratio($x, $y, $br: null, $height: null) {
+    position: relative;
+    overflow: hidden;
+
+    @include define-aspect($x, $y, $br, $height);
+
+    > img,
+    > div {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        min-height: 100%;
+        width: 100%;
+        transform: translateY(-50%);
+        object-fit: cover;
+    }
+}
