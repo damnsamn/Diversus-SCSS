@@ -1,8 +1,12 @@
-// Helpers are general single-function, immutable CSS classes used for quick styling of HTML elements.
+/*
 
-// They should only be used in cases where they are contextually necessary. If you find yourself
-// repeating these over and over when making components or repeating elements, you should instead
-// opt to style them within their own identifying class.
+Helpers are general, single-function, immutable CSS classes used for quick styling of HTML elements.
+
+They should only be used in cases where they are contextually necessary. If you find yourself
+repeating these over and over when making components or repeating elements, you should instead
+opt to style them within their own identifying class.
+
+*/
 
 .uppercase {
     text-transform: uppercase;

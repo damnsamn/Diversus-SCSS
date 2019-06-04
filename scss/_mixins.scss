@@ -1,4 +1,8 @@
-// This file should hold all the mixins you'll use throughout the rest of the scss.
+/*
+
+This file should hold all the mixins you'll use throughout the rest of the scss.
+
+*/
 
 @mixin ms-only {
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
