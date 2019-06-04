@@ -2,8 +2,8 @@
 
 @import '../_variables.scss';
 @import '../_overrides.scss';
-// Overrides is only imported so early in this case because it also overrides Bootstrap 4 breakpoints, which needs
-// to happen before you use them in media queries. If not using Bootstrap, this can go before _global.scss
+// Overrides is only imported so early in this case because it also overrides Bootstrap 4 breakpoints, which need
+// to be overridden before you use them. If not using Bootstrap, this can go before _global.scss
 @import '../_mixins.scss';
 @import '../_animations.scss';
 @import '../_helpers.scss';
