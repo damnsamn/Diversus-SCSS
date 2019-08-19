@@ -1,0 +1,17 @@
+/*
+
+This is an example of a component's sass file. All button-specific styling would go in this file
+
+*/
+
+.button {
+    font-size: 14px;
+    padding: 1em 1.5em;
+    background: blue;
+    color: #fff;
+
+	&--large {
+        font-size: 16px;
+        padding: 1.5em 2em;
+	} // outputs .button--large {}
+}

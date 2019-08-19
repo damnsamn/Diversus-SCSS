@@ -1,0 +1,24 @@
+/*
+
+- This file is dedicated only to @importing the /scss/*.scss files for compilation.
+- I've included commented @imports for Bootstrap's baseline layout and utility files
+- No actual css rules should be written here.
+
+*/
+
+// @import "vendor/bootstrap/functions";
+// @import "vendor/bootstrap/variables";
+// @import "vendor/bootstrap/mixins";
+// @import "vendor/bootstrap/reboot";
+// @import "vendor/bootstrap/utilities";
+// "vendor/bootstrap/grid" is imported in _overrides.scss
+
+@import 'overrides';
+
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'helpers';
+@import 'global';
+
+@import 'components/button'
