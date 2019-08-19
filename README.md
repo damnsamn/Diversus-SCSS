@@ -1,5 +1,7 @@
 A generic Sass/SCSS file-structure with example files. Intended for use as a template for new Diversus projects.
 
+Everything in this repo is just a suggestion, a template for if you're new to Sass or don't have a preference for its structure. For larger projects it might be more appropriate to use the [7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern) or whatever other preferences you might have.
+
 # You'll need:
  - Some knowledge of how Sass works, its patterns and best practices.
 	 - There are heaps of useful guides, just google it
