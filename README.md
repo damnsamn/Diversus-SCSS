@@ -12,7 +12,7 @@ Everything in this repo is just a suggestion, a template for if you're new to Sa
     $ cd [repo]\styles
     $ sass --watch --style=compressed style.scss:style.css
  - `--watch` will automatically watch for changes to your sass files and automatically compile on every saved change.
- - `--style=compressed` will remove comments and whitespace from the compiled .css file. Remove this option for a more verbose compilation
+ - `--style=compressed` will remove comments and whitespace from the compiled .css file. Remove this option for a more readable compilation
  - `[input path]:[output path]` can be more direct paths, in case your file structure varies from this repository's example structure
 	 - eg: `sass style.scss:..\css\style.css`
 
